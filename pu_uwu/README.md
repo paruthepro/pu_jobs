@@ -1,6 +1,14 @@
 # Items and crafting are handled by ox_inventory (A requirement for this job or write your own crafting system into the script, up to you!)
 ## [Recommended MLO](https://fivem.gabzv.com/package/4724734)
 
+## Containers (Add these to ox_inventory/modules/items/containers.lua at the bottom)
+```lua
+setContainerProperties('uwubag', {
+	slots = 10,
+	maxWeight = 10000,
+})
+```
+
 ## Items (Add these to your items.lua ox_inventory ONLY)
 ```lua
 -- Plushies
@@ -12,13 +20,6 @@
 	['uwuredplush'] = {label = 'UwU Red Plush', weight = 100, stack = true, close = true, description = "Its just a UwU Plush Toy"},
 	['uwugreenrareplush'] = {label = 'UwU Rare Green Plush', weight = 100, stack = true, close = true, description = "Its just a UwU Plush Toy"},
 	['uwugreenplush'] = {label = 'UwU Green Plush', weight = 100, stack = true, close = true, description = "Its just a UwU Plush Toy"},
-```
-## Containers (Add these toox_inventory/modules/items/containers.lua at the bottom)
-```lua
-setContainerProperties('uwubag', {
-	slots = 10,
-	maxWeight = 10000,
-})
 ```
 ```lua
 	-- UWU Bags
