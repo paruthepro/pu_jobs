@@ -1,8 +1,13 @@
 Config = {}
 
-Config.JobName = 'weedshop' --jobcode used in shared/jobs
+Config.JobName = 'burgershot' --jobcode used in shared/jobs
+Config.TargetSize = 2
 
-Config.CraftingTime = 10 --in seconds (5 = 5 seconds)
+Config.Duty = vec3(0, 0, 0) -- Clock in out point
+Config.Registers1 = vec3(0, 0, 0) -- Cash Register for billing (Utilises pu_billing)
+Config.Registers2 = vec3(0, 0, 0) -- Cash Register for billing (Utilises pu_billing)
+Config.Registers3 = vec3(0, 0, 0) -- Cash Register for billing (Utilises pu_billing)
+Config.Registers4 = vec3(0, 0, 0) -- Cash Register for billing (Utilises pu_billing)
 
 -- job Blip Stuff
 Config.BlipName = "Weed Store"
