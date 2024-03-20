@@ -96,7 +96,7 @@ setContainerProperties('uwubag', {
 
 ```
 ## Shop - Add to ox_inventory/data/shops.lua
-```
+```lua
 -- UWU Cafe Shop
 	UwU = {
 		name = 'UwU Cafe Cabinet',
