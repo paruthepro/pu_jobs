@@ -32,6 +32,7 @@ setContainerProperties('uwubag', {
 		consume = 0
 	},
 	-- UWU Ingredients
+	-- UWU Ingredients
 	['batter'] = {label = 'UwU Batter', weight = 100, degrade = 10080, stack = true, close = true, description = "An Ingredient"},
 	['noodles'] = {label = 'Dried Noodles', weight = 100, degrade = 5680, stack = true, close = true, description = "An Ingredient"},
 	['sodasyrup'] = {label = 'Soda Syrup', weight = 100, degrade = 4320, stack = true, close = true, description = "An Ingredient"},
@@ -40,6 +41,7 @@ setContainerProperties('uwubag', {
 	['cocoapowder'] = {label = 'Cocoa Powder', weight = 100, degrade = 4320, stack = true, close = true, description = "An Ingredient"},
 	['mshakeformula'] = {label = 'Milkshake Formula', weight = 100, degrade = 4320, stack = true, close = true, description = "An Ingredient"},
 	['burgersodasyrup'] = {label = 'Better Soda Syrup', weight = 100, degrade = 4320, stack = true, close = true, description = "An Ingredient"},
+
 	
 	-- UWU Drinks
 	['uwububbleteamint'] = {label = 'Minty B-T', weight = 1000, degrade = 4320, stack = true, close = true, description = "Matcha Tea with Mint Boba.", client = {status = {thirst = 200000}, anim = {dict = 'mp_player_intdrink', clip = 'loop_bottle'}, prop = {model = `prop_ld_flow_bottle`, pos = vec3(0.03, 0.03, 0.02), rot = vec3(0.0, 0.0, -1.5)}, usetime = 2500, cancel = true}},
@@ -96,7 +98,7 @@ setContainerProperties('uwubag', {
 
 ```
 ## Shop - Add to ox_inventory/data/shops.lua
-```lua
+
 -- UWU Cafe Shop
 	UwU = {
 		name = 'UwU Cafe Cabinet',
