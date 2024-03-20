@@ -1,5 +1,4 @@
 # Items and crafting are handled by ox_inventory (A requirement for this job or write your own crafting system into the script, up to you!)
-## Recommended MLO [(Free)](https://www.gta5-mods.com/maps/mlo-burgershot-2023-add-on-sp-fivem)
 ## Containers (Add these toox_inventory/modules/items/containers.lua at the bottom)
 ```lua
 setContainerProperties('burgermurdermeal', {
