@@ -17,8 +17,7 @@ exports.ox_target:addBoxZone({
     rotation = 32,
     options = {
             {
-                name = 'BurgerShotDuty',
-                event = 'pu-bs:DutyB',
+                serverEvent = 'QBCore:ToggleDuty',
                 icon = 'far fa-clipboard',
                 label = 'Clock On/Off',
                 groups = {[Config.JobName] = 0},
