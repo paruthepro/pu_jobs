@@ -3,8 +3,8 @@
 ## Containers (Add these toox_inventory/modules/items/containers.lua at the bottom)
 ```lua
 setContainerProperties('burgermurdermeal', {
-	slots = 5,
-	maxWeight = 5000,
+	slots = 10,
+	maxWeight = 10000,
 })
 ```
 ## Items (Add these to your items.lua ox_inventory ONLY)

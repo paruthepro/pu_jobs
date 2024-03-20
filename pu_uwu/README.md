@@ -1,80 +1,89 @@
 # Items and crafting are handled by ox_inventory (A requirement for this job or write your own crafting system into the script, up to you!)
-## Containers (Add these toox_inventory/modules/items/containers.lua at the bottom)
-```lua
-setContainerProperties('burgermurdermeal', {
-	slots = 5,
-	maxWeight = 5000,
-})
-```
+## [Recommended MLO](https://fivem.gabzv.com/package/4724734)
+
 ## Items (Add these to your items.lua ox_inventory ONLY)
 ```lua
-['burgertoy1'] = {label = 'Action Figure', weight = 500, stack = true, close = false, description = "An Action Figure From the late 90's"},
-['burgertoy2'] = {label = 'Pink Teddy', weight = 250, stack = true, close = false, description = "A Fluffy Pink Teddy from the Atic"},
-['burgercoupon10'] = {label = 'BS Coupon 10% Off', weight = 10, degrade = 10080, stack = true, close = false, description = "10% Off Coupon"},
-['burgercoupon15'] = {label = 'BS Coupon 15% Off', weight = 10, degrade = 4320, stack = true, close = false, description = "15% Off Coupon"},
-['burgercoupon25'] = {label = 'BS Coupon 25% Off', weight = 10, degrade = 10080, stack = true, close = false, description = "25% Off Coupon"},
-['burgertomato'] = {label = 'Tomato', weight = 100, degrade = 5760, stack = true, close = true, description = "An Ingredient"},
-['burgerbun'] = {label = 'Bun', weight = 100, degrade = 5760, stack = true, close = true, description = "An Ingredient"},
-['burgerlettuce'] = {label = 'Lettuce' ,weight = 100, degrade = 4320, stack = true, close = true, description = "An Ingredient"},
-['burgerraw'] = {label = 'Raw Patty', weight = 100, degrade = 4320, stack = true, close = true, description = "An Ingredient"},
-['burgersodasyrup'] = {label = 'Soda Syrup', weight = 100, degrade = 4320, stack = true, close = true, description = "An Ingredient"},
-['burgermeat'] = {label = 'Cooked Patty', weight = 100, degrade = 4320, stack = true, close = true, description = "An Ingredient"},
-['burgerpotato'] = {label = 'Bag of Potatoes', weight = 2500, degrade = 10080, stack = true, close = true, description = "An Ingredient"},
-['burgermshake'] = {label = 'BS Milkshake', weight = 1000, degrade = 4320, stack = true, close = true, description = "Brain Freeeeeeezzzzzee"},
-['burgermurdermeal'] = {label = 'Murder Meal Box', weight = 2000, degrade = 4320, stack = false, close = false, consume = 0, description = "An Amazing Murder Meal with a chance of a toy."},
-["burgersoftdrink"] = {label = "Soft Drink", weight = 125, degrade = 4840, stack = true, close = true, description = "An Ice Cold Drink.", client = {}},
-['burgerbleeder'] = {label = 'Bleeder', weight = 1000, degrade = 4320, stack = true, close = true, description = "Bleeder Burger", client = { status = { hunger = 400000 }, anim = 'eating', prop = 'burger', usetime = 2500, cancel = true}},
-['burgerfries'] = {label = 'Fries', weight = 1000, degrade = 4320, stack = true, close = true, description = "Burgershot Fries", client = { status = { hunger = 150000 }, anim = 'eating', prop = 'fries', usetime = 2500, cancel = true}},
-['burgerheartstopper'] = {label = 'Heartstopper', weight = 2500, degrade = 4320 ,stack = true, close = true, description = "Burgershot Heartstopper", client = {status = { hunger = 500000 }, anim = 'eating', prop = 'burger', usetime = 2500, cancel = true}},
-['burgermeatfree'] = {label = 'Meat Free Burger', weight = 1000, degrade = 4320, stack = true, close = true, description = "Vegan Burger", client = { status = { hunger = 250000 }, anim = 'eating', prop = 'burger', usetime = 2500, cancel = true}},
-['burgermoneyshot'] = {label = 'Moneyshot Burger', weight = 3000, degrade = 4320, stack = true, close = true, client = { status = { hunger = 200000 }, anim = 'eating', prop = 'burger', usetime = 2500, cancel = true}},
-['burgertorpedo'] = {label = 'Torpedo Burger', weight = 3100, degrade = 4320, stack = true, close = true, description = "Burgershot Torpedo Burger", client = { status = { hunger = 200000 }, anim = 'eating', prop = 'burger', usetime = 2500, cancel = true}},
+-- Plushies
+	['uwuyellowplush'] = {label = 'UwU Yellow Plush', weight = 100, stack = true, close = true, description = "Its just a UwU Plush Toy"},
+	['uwubrownplush'] = {label = 'UwU Brown Plush', weight = 100, stack = true, close = true, description = "Its just a UwU Plush Toy"},
+	['uwublueplush'] = {label = 'UwU Blue Plush', weight = 100, stack = true, close = true, description = "Its just a UwU Plush Toy"},
+	['uwupurpleplush'] = {label = 'UwU Purple Plush', weight = 100, degrade = 20160, stack = true, close = true, description = "Its just a UwU Plush Toy"},
+	['uwupinkrareplush'] = {label = 'UwU Rare Pink Plush', weight = 100, degrade = 4320, stack = true, close = true, description = "Its just a UwU Plush Toy"},
+	['uwuredplush'] = {label = 'UwU Red Plush', weight = 100, stack = true, close = true, description = "Its just a UwU Plush Toy"},
+	['uwugreenrareplush'] = {label = 'UwU Rare Green Plush', weight = 100, stack = true, close = true, description = "Its just a UwU Plush Toy"},
+	['uwugreenplush'] = {label = 'UwU Green Plush', weight = 100, stack = true, close = true, description = "Its just a UwU Plush Toy"},
+```
+## Containers (Add these toox_inventory/modules/items/containers.lua at the bottom)
+```lua
+setContainerProperties('uwubag', {
+	slots = 10,
+	maxWeight = 10000,
+})
+```
+```lua
+	-- UWU Bags
+	['uwubag'] = {
+		label = 'UwU Bag',
+		weight = 1000,
+		degrade = 20160,
+		stack = true,
+		close = true,
+		consume = 0
+	},
+	-- UWU Ingredients
+	['batter'] = {label = 'UwU Batter', weight = 100, degrade = 10080, stack = true, close = true, description = "An Ingredient"},
+	['noodles'] = {label = 'Dried Noodles', weight = 100, degrade = 5680, stack = true, close = true, description = "An Ingredient"},
+	['sodasyrup'] = {label = 'Soda Syrup', weight = 100, degrade = 4320, stack = true, close = true, description = "An Ingredient"},
+	
+	-- UWU Drinks
+	['uwububbleteamint'] = {label = 'Minty B-T', weight = 1000, degrade = 4320, stack = true, close = true, description = "Matcha Tea with Mint Boba.", client = {status = {thirst = 200000}, anim = {dict = 'mp_player_intdrink', clip = 'loop_bottle'}, prop = {model = `prop_ld_flow_bottle`, pos = vec3(0.03, 0.03, 0.02), rot = vec3(0.0, 0.0, -1.5)}, usetime = 2500, cancel = true}},
+	['uwububbleteablueberry'] = {label = 'Berry Bubble Tea', weight = 1000, degrade = 4320, stack = true, close = true, description = "Lavender Tea with Blueberry Boba.", client = {status = {thirst = 400000}, anim = {dict = 'mp_player_intdrink', clip = 'loop_bottle'}, prop = 'tea', usetime = 2500, cancel = true}},
+	['uwububbletearose'] = {label = 'Rose Bubble Tea', weight = 1000, degrade = 4320, stack = true, close = true, description = "Sakura Rose Tea with Vanilla Boba.", client = {status = {thirst = 400000}, anim = {dict = 'mp_player_intdrink', clip = 'loop_bottle'}, prop = 'tea', usetime = 2500, cancel = true}},
+	["classicuwutea"] = {label = "UwU Tea (Classic)", weight = 1000, degrade = 5760, stack = true, close = true, client = {status = {thirst = 400000}, anim = {dict = 'mp_player_intdrink', clip = 'loop_bottle'}, prop = 'tea', usetime = 2500, cancel = true, } },
+	["matchauwutea"] = {label = "UwU Tea (Matcha)", weight = 1000, degrade = 5760, stack = true, close = true, client = {status = {thirst = 400000}, anim = {dict = 'mp_player_intdrink', clip = 'loop_bottle'}, prop = 'tea', usetime = 2500, cancel = true, } },
+	["strawberryuwutea"] = {label = "UwU Tea (Strawberry)", weight = 1000, degrade = 5760, stack = true, close = true, client = {status = {thirst = 400000}, anim = {dict = 'mp_player_intdrink', clip = 'loop_bottle'}, prop = 'tea', usetime = 2500, cancel = true, } },
+	["chocouwutea"] = {label = "UwU Tea (Chocolate)", weight = 1000, degrade = 5760, stack = true, close = true, client = {status = {thirst = 400000}, anim = {dict = 'mp_player_intdrink', clip = 'loop_bottle'}, usetime = 2500, cancel = true}},
+	
+	-- UWU Food
+	['uwuchocsandy'] = {label = 'UwU Sandy', weight = 1000, degrade = 4320, stack = true, close = true, description = "Sweet Chocolate Biscuit with kitty marshmallows!", client = {status = {hunger = 200000}, anim = 'eating', prop = 'desert', usetime = 2500, cancel = true}},
+	['uwubudhabowl'] = {label = 'UwU Budha Bowl', weight = 1000, degrade = 4320, stack = true, close = true, description = "Bowl of nourishment and balance.", client = {status = {hunger = 500000}, anim = 'eating', prop = 'desert', usetime = 2500, cancel = true}},
+	['kittymarshmallows'] = {label = 'Uwu Marshmallows', weight = 1000, degrade = 4320, stack = true, close = true, description = "Uwu Kitty Marshmallows", client = {status = {hunger = 100000}, anim = 'eating', prop = 'desert', usetime = 4000, cancel = true}},
+	['uwushushi'] = {label = 'UwU Shushi', weight = 1000, degrade = 4320, stack = true, close = true, description = "Designed as a window to your soul.", client = {status = {hunger = 400000}, anim = 'eating', prop = 'desert', usetime = 4000, cancel = true}},
+	['uwupancake'] = {label = 'UwU Savory Pancake', weight = 1000, degrade = 4320, stack = true, close = true, description = "Korean savory pancake made with scallions.", client = {status = {hunger = 400000}, anim = 'eating', prop = 'desert', usetime = 4000, cancel = true}},
+	['uwucupcake'] = {label = 'UwU Cupcake', weight = 1000, degrade = 4320, stack = true, close = true, description = "Sugar Kitty Cupcake!", client = {status = {hunger = 200000}, anim = 'eating', prop = 'cupcake', usetime = 3000, cancel = true}},
+	['uwumisosoup'] = {label = 'UwU Miso Soup', weight = 1000, degrade = 4320, stack = true, close = true, description = "Fungus never tasted so good!", client = {status = {hunger = 400000}, anim = 'eating', prop = 'soup', usetime = 5000, cancel = true}},
+	['uwuvanillasandy'] = {label = 'UwU Sandy', weight = 2000, degrade = 4320, stack = true, close = true, description = "Sweet Vanilla Biscuit with kitty marshmallows!", client = {status = {hunger = 50000}, anim = 'eating', prop = 'desert', usetime = 4000, cancel = true}},
+	['uwucookie'] = {label = 'UwU Cookie', weight = 2500, degrade = 4320, stack = true, close = true, description = "Sugar Kitty Cookie!", client = {status = {hunger = 200000}, anim = 'eating', prop = 'cookie', usetime = 2500, }},
 ```
 ## Crafting - Add these to ox_inventory/data/crafting.lua
 ```lua
--- Burgershot Burger Crafting
-	{
+{
 		items = {
-            {name = 'burgerbleeder', ingredients = {burgermeat = 1, burgerlettuce = 1, burgerbun = 1, burgertomato = 1}, duration = 5000, count = 1}, 
-            {name = 'burgermoneyshot', ingredients = {burgermeat = 1, burgerlettuce = 1, burgerbun = 1, burgertomato = 1}, duration = 5000, count = 1},
-			{name = 'burgerheartstopper',ingredients = {burgermeat = 2, burgerlettuce = 1, burgerbun = 1, burgertomato = 1}, duration = 5000, count = 1},
-			{name = 'burgertorpedo', ingredients = {burgermeat = 1, burgerbun = 1}, duration = 5000, count = 1},
-			{name = 'burgermeatfree', ingredients = {burgerlettuce = 1, burgerbun = 1, burgertomato = 1}, duration = 5000, count = 1},
-            },
-		points = {vec3(-1185.9948730469, -899.62396240234, 13.548998832703)},
-		groups = {['burgershot'] = 0},
-		zones = {{ coords = vec3(-1185.9948730469, -899.62396240234, 13.548998832703), size = vec3(1, 1, 1), distance = 2, rotation = 70.0}}},
-	-- Burgershot Drinks Crafting
-    { 			
-		items = {
-			{name = 'bscola', ingredients = {burgersodasyrup = 2}, duration = 5000, count = 1},
-			{name = 'bslemon', ingredients = {burgersodasyrup = 1}, duration = 2500, count = 1},
-			{name = 'burgermshake', ingredients = {mshakeformula = 2}, duration = 7500, count = 1},
+			{name = 'uwuvanillasandy', ingredients = {batter = 1, milk = 2, flour = 1, egg = 1}, duration = 5000, count = 1},
+			{name = 'uwuchocsandy', ingredients = {batter = 1, cocoapowder = 1, milk = 2, flour = 1, egg = 1}, duration = 5000, count = 1},
+			{name = 'uwubudhabowl', ingredients = {noodles = 1, flour = 1, egg = 2}, duration = 5000, count = 1},
+			{name = 'uwushushi', ingredients = {noodles = 2, milk = 1, flour = 2}, duration = 5000, count = 1},
+			{name = 'uwupancake', ingredients = {batter = 1, flour = 2, milk = 2, egg = 4}, duration = 5000, count = 1},
+			{name = 'uwumisosoup', ingredients = {noodles = 1, milk = 1, flour = 1}, duration = 5000, count = 1},
+			{name = 'uwucupcake', ingredients = {batter = 1, milk = 2, egg = 1, flour = 1}, duration = 5000, count = 1},
+			{name = 'uwucookie', ingredients = {batter = 1, milk = 1, egg = 2, flour = 1, cocoapowder = 2}, duration = 5000, count = 1},
 		},
-		points = {vec3(-1191.3488769531, -898.02728271484, 14.071642875671)},
-		groups = {['burgershot'] = 0},
-		zones = {{ coords = vec3(-1191.3488769531, -898.02728271484, 14.071642875671), size = vec3(1, 1, 1), distance = 2, rotation = 70.0}}},
-
-    -- Burgershot Fries Crafting
-	{ 
-		items = {
-			{ name = 'burgerfries', ingredients = {burgerpotato = 1}, duration = 5000, count = 1}},
-		points = {vec3(-1188.1887207031, -901.13311767578, 13.69873046875)},
-		groups = {['burgershot'] = 0},
+		points = {vec3(-591.00311279297, -1063.0329589844, 22.317287445068)},
+		groups = {['uwucafe'] = 0},
 		zones = {
-			{ coords = vec3(-1188.1887207031, -901.13311767578, 13.69873046875), size = vec3(1, 1, 1), distance = 2, rotation = 70.0}}},
-
-    -- Burgershot Raw Cooking
+			{coords = vec3(-591.00311279297, -1063.0329589844, 22.317287445068), size = vec3(2, 2, 2), distance = 2, rotation = 0}}},
+	-- UwU Drinks Crafting Station
 	{
-		items = {{ name = 'burgermeat', ingredients = {burgerraw = 1}, duration = 5000, count = 1}},
-		points = {vec3(-1187.2214355469, -900.86828613281, 13.759497642517)},
-		groups = {['burgershot'] = 0},
-		zones = {{ coords = vec3(-1187.2214355469, -900.86828613281, 13.759497642517), size = vec3(1, 1, 1), distance = 2, rotation = 70.0}}},
-
-    -- Burgershot Box Crafting
-	{
-		items = {{ name = 'burgermurdermeal', ingredients = {box = 1}, duration = 10000, count = 1}},
-		points = {vec3(-1187.5473632813, -897.19274902344, 14.119976997375)},
-		groups = {['burgershot'] = 0},
-		zones = {{ coords = vec3(-1187.5473632813, -897.19274902344, 14.119976997375), size = vec3(1, 1., 1), distance = 2, rotation = 70.0}}},
-    ```
+		items = {
+			{name = 'chocouwutea', ingredients = {mshakeformula = 2}, duration = 7500, count = 1},
+			{name = 'classicuwutea', ingredients = {mshakeformula = 2}, duration = 7500, count = 1},
+			{name = 'matchauwutea', ingredients = {mshakeformula = 2}, duration = 7500, count = 1},
+			{name = 'strawberryuwutea', ingredients = {mshakeformula = 2}, duration = 7500, count = 1},
+			{name = 'uwububbletearose', ingredients = {mshakeformula = 2}, duration = 7500, count = 1},
+			{name = 'uwububbleteamint', ingredients = {mshakeformula = 2}, duration = 7500, count = 1},
+			{name = 'uwububbleteablueberry', ingredients = {burgersodasyrup = 1}, duration = 7500, count = 1},
+		},
+		points = {vec3(-586.67333984375, -1061.9393310547, 22.492137908936)},
+		groups = {['uwucafe'] = 0},
+		zones = {{coords = vec3(-586.67333984375, -1061.9393310547, 22.492137908936), size = vec3(1, 1., 1), distance = 2, rotation = 70.0}},
+	},
