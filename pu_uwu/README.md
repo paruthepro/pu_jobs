@@ -32,9 +32,16 @@ setContainerProperties('uwubag', {
 		consume = 0
 	},
 	-- UWU Ingredients
+	-- UWU Ingredients
 	['batter'] = {label = 'UwU Batter', weight = 100, degrade = 10080, stack = true, close = true, description = "An Ingredient"},
 	['noodles'] = {label = 'Dried Noodles', weight = 100, degrade = 5680, stack = true, close = true, description = "An Ingredient"},
 	['sodasyrup'] = {label = 'Soda Syrup', weight = 100, degrade = 4320, stack = true, close = true, description = "An Ingredient"},
+	['egg'] = {label = 'Egg', weight = 100, degrade = 4320, stack = true, close = true, description = "An Ingredient"},
+	['flour'] = {label = 'Flour', weight = 100, degrade = 4320, stack = true, close = true, description = "An Ingredient"},
+	['cocoapowder'] = {label = 'Cocoa Powder', weight = 100, degrade = 4320, stack = true, close = true, description = "An Ingredient"},
+	['mshakeformula'] = {label = 'Milkshake Formula', weight = 100, degrade = 4320, stack = true, close = true, description = "An Ingredient"},
+	['burgersodasyrup'] = {label = 'Better Soda Syrup', weight = 100, degrade = 4320, stack = true, close = true, description = "An Ingredient"},
+
 	
 	-- UWU Drinks
 	['uwububbleteamint'] = {label = 'Minty B-T', weight = 1000, degrade = 4320, stack = true, close = true, description = "Matcha Tea with Mint Boba.", client = {status = {thirst = 200000}, anim = {dict = 'mp_player_intdrink', clip = 'loop_bottle'}, prop = {model = `prop_ld_flow_bottle`, pos = vec3(0.03, 0.03, 0.02), rot = vec3(0.0, 0.0, -1.5)}, usetime = 2500, cancel = true}},
@@ -87,4 +94,49 @@ setContainerProperties('uwubag', {
 		points = {vec3(-586.67333984375, -1061.9393310547, 22.492137908936)},
 		groups = {['uwucafe'] = 0},
 		zones = {{coords = vec3(-586.67333984375, -1061.9393310547, 22.492137908936), size = vec3(1, 1., 1), distance = 2, rotation = 70.0}},
+	},
+
+```
+## Shop - Add to ox_inventory/data/shops.lua
+```
+-- UWU Cafe Shop
+	UwU = {
+		name = 'UwU Cafe Cabinet',
+		groups = {['uwucafe'] = 0},
+inventory = {
+			{ name = 'batter', price = 0},
+			{ name = 'noodles', price = 0},
+			{ name = 'sodasyrup', price = 0, },
+			{ name = 'egg', price = 0 },
+			{ name = 'flour', price = 0 },
+			{ name = 'cocoapowder', price = 0 },
+			{ name = 'mshakeformula', price = 0, },
+			{ name = 'burgersodasyrup', price = 0, },
+
+		}, locations = {
+			vec3(-588.5399, -1067.3201, 22.3442)
+		}, targets = {
+			{ loc = vec3(-588.0399, -1067.3201, 22.3442), length = 2.5, width = 3.0, heading = 267.0, minZ = 20.5, maxZ = 24.0, distance = 6 }
+		}
+	},
+
+	UwU2 = {
+		name = 'UwU Bag Thingie',
+		groups = {['uwucafe'] = 0},
+inventory = {
+			{ name = 'uwubag', price = 0},
+			{ name = 'uwupurpleplush', price = 0},
+			{ name = 'uwubrownplush', price = 0},
+			{ name = 'uwublueplush', price = 0},
+			{ name = 'uwupinkrareplush', price = 0},
+			{ name = 'uwuredplush', price = 0},
+			{ name = 'uwugreenrareplush', price = 0},
+			{ name = 'uwugreenplush', price = 0},
+
+		}, locations = {
+			vec3(-585.7916, -1055.9081, 22.3442)
+		}, targets = {
+			{ loc = vec3(-585.7916, -1055.9081, 22.3442), length = 2.5, width = 3.0, heading = 5.0, minZ = 20.5, maxZ = 24.0, distance = 6 }
+
+		}
 	},
