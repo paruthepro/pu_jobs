@@ -1,5 +1,5 @@
 # Items and crafting are handled by ox_inventory (A requirement for this job or write your own crafting system into the script, up to you!)
-
+## [Recommended MLO](https://www.gta5-mods.com/maps/mlo-legion-weed-clinic)
 ## Items (Add these to your items.lua ox_inventory ONLY)
 ```lua
 ['ground_weed'] = {label = 'Ground Weed', weight = 100, degrade = 5760, stack = true, close = true, description = "Ground up weed from the grinder"},
