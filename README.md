@@ -1,6 +1,22 @@
 # PU Jobs - Universally compatible jobs for you!
 
-## Dependencies
+Currently within the repo are the following completed jobs/locations
+
+Burgershot (Including the recommended MLO) <br>
+Weed Store (Including the recommended MLO) <br>
+UwU Cat Cafe (Gabz MLO recommended) <br>
+Hornys (Gabz MLO recommended) <br>
+Installation Instructions included *Per Job* so check each ReadMe file please! <br>
+Requests are accepted (I'll happily add more jobs at your request) <br>
+<br>
+Currently being worked on <br>
+Tuner Shop (75%) <br>
+Gun Store (50%) <br>
+Tequi-la-la (0%) <br>
+Up N Atom (75%) <br>
+Vanilla Unicorn (75%) <br>
+Bean Machine (99% - Just finishing up the crafting menus) <br>
+## Dependencies <br>
 [ox_lib](https://github.com/overextended/ox_lib) <br>
 [ox_inventory](https://github.com/overextended/ox_inventory) <br>
 [PU_Billing](https://github.com/paruthepro/pu_billing) - This is REQUIRED for the billing portion of these jobs to work, it's cleanly integrated and well optimised. <br>
