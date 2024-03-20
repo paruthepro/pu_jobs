@@ -1,12 +1,7 @@
 # Items and crafting are handled by ox_inventory (A requirement for this job or write your own crafting system into the script, up to you!)
 ## Recommended MLO (https://fivem.gabzv.com/package/4724795)
 ## Containers (Add these toox_inventory/modules/items/containers.lua at the bottom)
-```lua
-setContainerProperties('burgermurdermeal', {
-	slots = 10,
-	maxWeight = 10000,
-})
-```
+
 ## Items (Add these to your items.lua ox_inventory ONLY)
 ```lua
 -- Food
