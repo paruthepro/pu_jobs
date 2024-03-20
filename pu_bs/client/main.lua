@@ -67,7 +67,6 @@ exports.ox_target:addBoxZone({
         },
     },
 })
--- Drive Thru
 exports.ox_target:addBoxZone({
     coords = Config.Registers4,
     size = Config.TargetSize,
