@@ -6,11 +6,11 @@ Burgershot (Including the recommended MLO) <br>
 Weed Store (Including the recommended MLO) <br>
 UwU Cat Cafe (Gabz MLO recommended) <br>
 Hornys (Gabz MLO recommended) <br>
+Tuner Shop/Mechanic Shop (Gabz MLOs recommended) <br>
 Installation Instructions included *Per Job* so check each ReadMe file please! <br>
 Requests are accepted (I'll happily add more jobs at your request) <br>
 <br>
 Currently being worked on <br>
-Tuner Shop (75%) <br>
 Gun Store (50%) <br>
 Tequi-la-la (0%) <br>
 Up N Atom (75%) <br>
