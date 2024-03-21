@@ -91,3 +91,13 @@
 		},
 	},
 ```
+## shops.lua Shop
+```lua
+MechanicSupplies = {
+		name = 'Mechanic Supply Shop',
+		groups = {['tunershop'] = 0,['mechanic'] = 0,},
+        inventory = {{name = 'steel', price = 25, },{name = 'iron', price = 15, },{name = 'plastic', price = 10, },{name = 'lead', price = 100, },},
+		locations = {vec3(377.61236572266, -814.62231445313, 29.120674133301)},
+		targets = {{loc = vec3(377.61236572266, -814.62231445313, 29.120674133301), length = 1.0, width = 1.0, heading = 140.45, minZ = 29.0, maxZ = 30.0, distance = 2}}
+	},
+```
