@@ -1,4 +1,3 @@
-PlayerJob = {}
 CreateThread(function()
     local Blip = AddBlipForCoord(Config.Blipcord.x, Config.Blipcord.y, Config.Blipcord.z)
     SetBlipSprite (Blip, 469)
@@ -10,6 +9,7 @@ CreateThread(function()
     AddTextComponentSubstringPlayerName(Config.BlipName)
     EndTextCommandSetBlipName(Blip)
 end)
+
 exports.ox_target:addBoxZone({
     coords = Config.Duty,
     size = Config.TargetSize,
