@@ -19,9 +19,7 @@
 ## Crafting - Add these to ox_inventory/data/crafting.lua
 ```lua
 	{
-		items = {
-			{name = 'upnatom_fries', ingredients = {burgerpotato = 2}, duration = 5000, count = 1},
-		},
+		items = {{name = 'upnatom_fries', ingredients = {burgerpotato = 2}, duration = 5000, count = 1}},
 		points = {vec3(92.996353149414, 292.17294311523, 110.25498962402)},
 		groups = {['upnatom'] = 0},
 		-- Fry Cooker
