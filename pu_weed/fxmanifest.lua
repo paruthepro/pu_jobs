@@ -4,7 +4,7 @@ game 'gta5'
 lua54 'yes'
 
 author 'Paru'
-description 'weed shop job by Paru'
+description 'Weed Shop job for QBX'
 version '1.0'
 
 shared_scripts {

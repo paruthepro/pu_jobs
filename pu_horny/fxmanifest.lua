@@ -1,10 +1,8 @@
 fx_version 'cerulean'
 game 'gta5'
-
 lua54 'yes'
-
 author 'Paru'
-description 'Burgershot Job by Paru'
+description 'Hornys by for QBX'
 version '1.0'
 
 shared_scripts {

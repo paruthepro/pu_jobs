@@ -4,7 +4,7 @@ game 'gta5'
 lua54 'yes'
 
 author 'Paru'
-description 'Burgershot Job by Paru'
+description 'UwU Cat Cafe Job for QBX'
 version '1.0'
 
 shared_scripts {
