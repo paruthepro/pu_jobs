@@ -38,12 +38,12 @@
 -- Pizza Oven
 	{
 		items = {
-            {name = 'cheesepizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3}, duration = 5000, count = 1}, 
-            {name = 'neopolitanpizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3, pizzabasil = 5}, duration = 5000, count = 1},
-			{name = 'pepperonipizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3, pizzapepperoni = 15}, duration = 5000, count = 1},
-			{name = 'meatloverspizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3, pizzapepperoni = 15, pizzasausage = 15}, duration = 5000, count = 1},
-			{name = 'supremempizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3, pizzapepperoni = 15, pizzasausage = 15, pizzaveggies = 15}, duration = 5000, count = 1},
-			{name = 'nothingpizza', ingredients = {pizzadough = 1}, duration = 5000, count = 1},            
+            	{name = 'cheesepizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3}, duration = 5000, count = 1}, 
+            	{name = 'neopolitanpizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3, pizzabasil = 5}, duration = 5000, count = 1},
+		{name = 'pepperonipizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3, pizzapepperoni = 15}, duration = 5000, count = 1},
+		{name = 'meatloverspizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3, pizzapepperoni = 15, pizzasausage = 15}, duration = 5000, count = 1},
+		{name = 'supremempizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3, pizzapepperoni = 15, pizzasausage = 15, pizzaveggies = 15}, duration = 5000, count = 1},
+		{name = 'nothingpizza', ingredients = {pizzadough = 1}, duration = 5000, count = 1},            
             },
 		points = {vec3(813.3165, -752.8980, 26.7808, 255.1712)},
 		groups = {['pizzathis'] = 0},
@@ -53,20 +53,20 @@
     ```
 ## Shop - Add to ox_inventory/data/shops.lua
 ```lua
--- UWU Cafe Shop
-	UwU = {
+-- Pizza This Shop
+	PizzaThis = {
 		name = 'Pizza This! Freezer',
 		groups = {['pizzathis'] = 0},
-inventory = {
+		inventory = {
 			{ name = 'pizzadough', price = 0},
 			{ name = 'pizzasauce', price = 0},
-			{ name = 'pizzacheese', price = 0, },
-            { name = 'pizzabasil', price = 0, },
-			{ name = 'pizzapepperoni', price = 0 },
-			{ name = 'pizzasausage', price = 0 },
-			{ name = 'pizzabacon', price = 0 },
-			{ name = 'pizzaveggies', price = 0, },
-			{ name = 'pizzasalad', price = 0, },
+			{ name = 'pizzacheese', price = 0},
+			{ name = 'pizzabasil', price = 0},
+			{ name = 'pizzapepperoni', price = 0},
+			{ name = 'pizzasausage', price = 0},
+			{ name = 'pizzabacon', price = 0},
+			{ name = 'pizzaveggies', price = 0},
+			{ name = 'pizzasalad', price = 0},
 
 		}, locations = {
 			vec3(802.3239, -757.3510, 26.7809)
@@ -75,10 +75,10 @@ inventory = {
 		}
 	},
 
-	UwU2 = {
+	PizzaThisAlcohol = {
 		name = 'Pizza This! Alcohol Cabinet',
 		groups = {['pizzathis'] = 0},
-inventory = {
+		inventory = {
 			{ name = 'pizzawine1', price = 0},
 			{ name = 'pizzawine2', price = 0},
 			{ name = 'pizzabeer1', price = 0},
