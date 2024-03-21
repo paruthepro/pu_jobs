@@ -38,13 +38,14 @@
 -- Pizza Oven
 	{
 		items = {
-            	{name = 'cheesepizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3}, duration = 5000, count = 1}, 
-            	{name = 'neopolitanpizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3, pizzabasil = 5}, duration = 5000, count = 1},
-		{name = 'pepperonipizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3, pizzapepperoni = 15}, duration = 5000, count = 1},
-		{name = 'meatloverspizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3, pizzapepperoni = 15, pizzasausage = 15}, duration = 5000, count = 1},
-		{name = 'supremempizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3, pizzapepperoni = 15, pizzasausage = 15, pizzaveggies = 15}, duration = 5000, count = 1},
-		{name = 'nothingpizza', ingredients = {pizzadough = 1}, duration = 5000, count = 1},            
-            },
+	            	{name = 'cheesepizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3}, duration = 5000, count = 1}, 
+	            	{name = 'neopolitanpizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3, pizzabasil = 5}, duration = 5000, count = 1},
+			{name = 'pepperonipizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3, pizzapepperoni = 15}, duration = 5000, count = 1},
+			{name = 'meatloverspizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3, pizzapepperoni = 15, pizzasausage = 15}, duration = 5000, count = 1},
+			{name = 'supremempizza', ingredients = {pizzadough = 1, pizzasauce = 2, pizzacheese = 3, pizzapepperoni = 15, pizzasausage = 15, pizzaveggies = 15}, duration = 5000, count = 1},
+			{name = 'nothingpizza', ingredients = {pizzadough = 1}, duration = 5000, count = 1}
+		},
+
 		points = {vec3(813.3165, -752.8980, 26.7808, 255.1712)},
 		groups = {['pizzathis'] = 0},
 		zones = {{ coords = vec3(813.2467, -752.9171, 26.7808), size = vec3(1, 2, 1), distance = 2, rotation = 270.0}}},
