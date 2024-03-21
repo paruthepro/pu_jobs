@@ -8,12 +8,12 @@ UwU Cat Cafe (Gabz MLO recommended) <br>
 Hornys (Gabz MLO recommended) <br>
 Tuner Shop/Mechanic Shop (Gabz MLOs recommended) <br>
 Gun Store (Gabz MLO recommended) <br>
+Up N Atom (Gabz MLO recommended) <br> 
 Installation Instructions included *Per Job* so check each ReadMe file please! <br> <br>
 Requests are accepted (I'll happily add more jobs at your request) <br>
 <br>
 Currently being worked on <br>
 Tequi-la-la (0%) -- Won't be done. <br>
-Up N Atom (75%) <br>
 Vanilla Unicorn (75%) -- Holding off until other resource complete <br>
 Bean Machine (99% - Just finishing up the crafting menus) <br>
 ## Dependencies <br>
