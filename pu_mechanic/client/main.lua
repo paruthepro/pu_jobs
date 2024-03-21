@@ -19,7 +19,6 @@ local function IsBackEngine(vehModel)
 end
 
 -- Events
-
 RegisterNetEvent('tunershop:client:useitem', function(type, item, tier)
     if Config.JobInstall and not isAuth then return end
     local ply = source
