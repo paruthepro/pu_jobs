@@ -19,18 +19,6 @@ local function IsBackEngine(vehModel)
 end
 
 -- Events
-RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
-    if QBX.PlayerData.job.name == "mechanic" or "tunershop" then
-        isAuth = true
-    end
-end)
-
-RegisterNetEvent('QBCore:Client:OnJobUpdate', function(job)
-    isAuth = false
-    if job.name == "mechanic" or "tunershop" then
-        isAuth = true
-    end
-end)
 
 RegisterNetEvent('tunershop:client:useitem', function(type, item, tier)
     if Config.JobInstall and not isAuth then return end
