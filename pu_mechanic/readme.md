@@ -101,3 +101,17 @@ MechanicSupplies = {
 		targets = {{loc = vec3(377.61236572266, -814.62231445313, 29.120674133301), length = 1.0, width = 1.0, heading = 140.45, minZ = 29.0, maxZ = 30.0, distance = 2}}
 	},
 ```
+## Storage
+```lua
+-- Tuner Shop Storage
+	{
+		coords = vec3(128.55114746094, -3013.9221191406, 6.6720352172852),
+		target = {loc = vec3(128.55114746094, -3013.9221191406, 6.6720352172852), length = 0.5, width = 0.5, heading = 32, minZ = 43.34, maxZ = 44.74, label = 'Open Tuner Shop Storage'},
+		name = 'tunershop', label = 'Tuner Shop Storage', owner = false, groups = {['tunershop'] = 0}, slots = 100, weight = 10000000
+	},
+	-- Tuner Shop Storage (Outside)
+	{
+		coords = vec3(121.23665618896, -3028.5456542969, 6.9231839179993),
+		target = {loc = vec3(121.23665618896, -3028.5456542969, 6.9231839179993), length = 0.5, width = 0.5, heading = 32, minZ = 43.34, maxZ = 44.74, label = 'Open Tuner Shop Storage'}, 
+		name = 'tunershop', label = 'Tuner Shop Storage', owner = false, groups = {['tunershop'] = 0}, slots = 100, weight = 10000000},
+```
