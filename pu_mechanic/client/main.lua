@@ -21,9 +21,9 @@ end
 -- Events
 RegisterNetEvent('tunershop:client:useitem', function(type, item, tier)
     if Config.JobInstall and not isAuth then return end
-    local ply = source
     local ped = PlayerPedId()
-    local closestVeh = lib.getClosestVehicle(ply.PlayerData.position, 1, false)
+    local ply = GetEntityCoords(ped)
+    local closestVeh = lib.getClosestVehicle(ply, 1, false)
     if not isUpgrading then
         if closestVeh ~= 0 then
             local pedCoords = GetEntityCoords(ped)
