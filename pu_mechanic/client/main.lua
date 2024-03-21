@@ -19,7 +19,7 @@ local function IsBackEngine(vehModel)
 end
 
 -- Events
-RegisterNetEvent('tunershop:client:useitem', function(type, item, tier)
+RegisterNetEvent('pu_jobs:client:useitem', function(type, item, tier)
     if Config.JobInstall and not isAuth then return end
     local ped = PlayerPedId()
     local ply = GetEntityCoords(ped)
@@ -71,7 +71,7 @@ RegisterNetEvent('tunershop:client:useitem', function(type, item, tier)
                                 SetVehicleMod(closestVeh, 16, 0, false)
                             end
                             local vehMods = exports.qbx_core:GetVehicleProperties(closestVeh)
-                            TriggerServerEvent('tunershop:server:finish', item, vehMods)
+                            TriggerServerEvent('pu_jobs:server:finish', item, vehMods)
                             exports.qbx_core:Notify('Succesfully installed '..type)
                             isUpgrading = false
                     else
